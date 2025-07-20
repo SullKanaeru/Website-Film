@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="css/register_style.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+            <form action="index.html" class="register-form">
+        <img src="images/logo1.svg" alt="Logo Chill" class="logo-img" />
+        
+        <div class="title-form">
+          <h1>Daftar</h1>
+          <p>Selamat Datang!</p>
+        </div>
+
+        <div class="input-container">
+          <label for="username-input">Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Masukkan username"
+            id="username-input"
+            required
+          />
+        </div>
+
+        <div class="input-container">
+          <label for="password-input">Kata Sandi</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Masukkan kata sandi"
+            id="password-input"
+            required
+          />
+          <span><i class="fi fi-sr-eye-crossed"></i></span>
+        </div>
+
+        <div class="input-container">
+          <label for="password-confirm-input">Konfirmasi Kata Sandi</label>
+          <input
+            type="password"
+            name="confirm-password"
+            placeholder="Masukkan kata sandi"
+            id="password-confirm-input"
+            required
+          />
+          <div class="help-container">
+            <p>Sudah punya akun? <a href="index.html">Masuk</a></p>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button type="submit" id="masuk-button">Daftar</button>
+          <p>Atau</p>
+          <button type="button" id="masuk-google-button">
+            <img src="images/google_logo.png" alt="Logo Google" />Daftar dengan
+            Google
+          </button>
+        </div>
+      </form>
+
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
