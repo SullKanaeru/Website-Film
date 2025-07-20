@@ -73,6 +73,54 @@ input::placeholder {
   color: rgba(193, 194, 196, 1);
 }
 
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.password-wrapper i {
+  color: rgba(157, 158, 161, 1);
+}
+
+.password-icon-container {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgba(193, 194, 196, 1);
+  font-size: 16px;
+}
+
+.toggle-password {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-password .icon-eye-slash {
+  display: none;
+  pointer-events: none;
+}
+
+.password-icon-container #toggle:checked ~ .password-label .icon-eye {
+  display: none;
+  pointer-events: none;
+}
+
+.password-icon-container #toggle:checked ~ .password-label .icon-eye-slash {
+  display: flex;
+  pointer-events: auto;
+}
+
 .help-container {
   width: 100%;
   display: flex;
@@ -129,7 +177,7 @@ button {
 /* Responsive to Phone */
 @media (max-width: 480px) {
   .container {
-    padding: 27px;  
+    padding: 27px;
   }
 
   .help-container {

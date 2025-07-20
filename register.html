@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Page</title>
     <link rel="stylesheet" href="css/register_style.css" />
-
+    <link rel="stylesheet" href="fontawsome/css/all.min.css" />
   </head>
 
   <body>
     <div class="container">
-            <form action="index.html" class="register-form">
+      <form action="index.html" class="register-form">
         <img src="images/logo1.svg" alt="Logo Chill" class="logo-img" />
-        
+
         <div class="title-form">
           <h1>Daftar</h1>
           <p>Selamat Datang!</p>
@@ -31,25 +31,54 @@
 
         <div class="input-container">
           <label for="password-input">Kata Sandi</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Masukkan kata sandi"
-            id="password-input"
-            required
-          />
-          <span><i class="fi fi-sr-eye-crossed"></i></span>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              name="password"
+              placeholder="Masukkan kata sandi"
+              id="password-input"
+              required
+            />
+            <div class="password-icon-container">
+              <input
+                type="checkbox"
+                id="toggle"
+                hidden
+              />
+              <label class="password-label" for="toggle">
+                <span class="toggle-password">
+                  <i class="fas fa-eye icon-eye"></i>
+                  <i class="fas fa-eye-slash icon-eye-slash"></i>
+                </span>
+              </label>
+            </div>
+          </div>
         </div>
 
         <div class="input-container">
           <label for="password-confirm-input">Konfirmasi Kata Sandi</label>
-          <input
-            type="password"
-            name="confirm-password"
-            placeholder="Masukkan kata sandi"
-            id="password-confirm-input"
-            required
-          />
+          <div class="password-wrapper">
+            <input
+              type="password"
+              name="password"
+              placeholder="Masukkan kata sandi"
+              id="password-confirm-input"
+              required
+            />
+            <div class="password-icon-container">
+              <input
+                type="checkbox"
+                id="confirm-toggle"
+                hidden
+              />
+              <label class="password-label" for="confirm-toggle">
+                <span class="toggle-password">
+                  <i class="fas fa-eye icon-eye"></i>
+                  <i class="fas fa-eye-slash icon-eye-slash"></i>
+                </span>
+              </label>
+            </div>
+          </div>
           <div class="help-container">
             <p>Sudah punya akun? <a href="index.html">Masuk</a></p>
           </div>
@@ -64,9 +93,6 @@
           </button>
         </div>
       </form>
-
     </div>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
