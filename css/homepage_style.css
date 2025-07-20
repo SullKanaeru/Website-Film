@@ -310,6 +310,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .continues-film .film-container .film-cover {
@@ -320,6 +321,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .film-cover .film-detail {
